@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ex4</title>
+    <script language="javascript">
+    //début du script
+      function afficherTxt(lastname,firstname,city)
+      {
+      window.alert(`Bonjour ${lastname} ${firstname} \nde ${city}`)
+      }
+    //fin du script
+    </script>
+  </head>
+  <body>
+    <form name="formu">
+    <p>Nom : <input name="lastname" size="25"></p>
+    <p>Prenom : <input name="firstname" size="25"></p>
+    <p>Ville: <input name="city" size="25"></p>
+    <input type="button" name="lancer" value="Valider"
+    onClick="afficherTxt(document.formu.lastname.value, document.formu.firstname.value, document.formu.city.value)">
+    </form>
+  </body>
+</html>
